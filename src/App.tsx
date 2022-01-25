@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import { CompoundComponents } from "./compound-components";
+import { FlexibleCompoundComponents } from "./flexible-compound-components";
+
+// This app will help identify the trade-offs of the different React patterns
+// and when each pattern would be most appropriate. The following patterns will allow
+// for more useful and reusable code by adhering to design principles like separation
+// of concern, DRY, and code reuse. Some of these patterns will help with problems that
+//  arise in large React applications such as [prop drilling](https://kentcdodds.com/blog/prop-drilling)
+// or managing state. Each major pattern includes an example hosted on [CodeSandBox](https://codesandbox.io/).
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <CompoundComponents /> */}
+      <FlexibleCompoundComponents />
+    </>
   );
 }
 
